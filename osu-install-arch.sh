@@ -141,7 +141,7 @@ export WINEARCH=win32
 zenitynotif "I have everything ready, now we will install .NET Framework\nThis might take 5-10 minutes, because .NET Frameworks' installer sucks."
 
 # Let's start the installation.
-winetricks dotnet40 >/dev/null 2>&1 || botherrors "winetricks messed up something, don't blame me."
+winetricks dotnet40 cjkfonts >/dev/null 2>&1 || botherrors "winetricks messed up something, don't blame me."
 
 # Tell user about osu! installation.
 zenitynotif "It took long time, right? I told you, people over at Microsoft can't even make proper installer.\\nAnyway, let's download osu! client, and install it.\n\nDon't change osu! directory, otherwise the game wouldn't start.\\nAfter it will be started, close the game, and press any key 3 times inside terminal."
@@ -176,6 +176,8 @@ fi
 echo "#!/bin/sh
 export WINEPREFIX="$userdir"
 export STAGING_AUDIO_DURATION=8000 # As low as you can get osu! stable with
+export vblank_mode=0
+export __GL_SYNC_TO_VBLANK=0
 
 cd "$userdir/drive_c/users/$USER/AppData/Local/osu!"
 wine osu!.exe "$@"" | sudo tee /bin/osus

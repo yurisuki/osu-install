@@ -41,6 +41,7 @@ curl https://raw.githubusercontent.com/yurisuki/osu-install/main/osu-install-arc
 
 # distributions
 I know, it's just for Arch Linux based distributions, but I plan making this for other distributions.
+
 Please, write your distribution [here](https://github.com/yurisuki/osu-install/issues/2), it will help me decide, on which distribution I should focus next. Thank you.
 
 # todo/wish

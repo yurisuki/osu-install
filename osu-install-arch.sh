@@ -141,7 +141,7 @@ export WINEARCH=win32
 zenitynotif "I have everything ready, now we will install .NET Framework\nThis might take 5-10 minutes, because .NET Frameworks' installer sucks."
 
 # Let's start the installation.
-winetricks dotnet40 gdiplus_winxp cjkfonts >/dev/null 2>&1 || botherrors "winetricks messed up something, don't blame me."
+winetricks dotnet40 cjkfonts >/dev/null 2>&1 || botherrors "winetricks messed up something, don't blame me."
 
 # Tell user about osu! installation.
 zenitynotif "It took long time, right? I told you, people over at Microsoft can't even make proper installer.\\nAnyway, let's download osu! client, and install it.\n\nDon't change osu! directory, otherwise the game wouldn't start.\\nAfter it will be started, close the game, and press any key 3 times inside terminal."

@@ -176,6 +176,8 @@ fi
 echo "#!/bin/sh
 export WINEPREFIX="$userdir"
 export STAGING_AUDIO_DURATION=8000 # As low as you can get osu! stable with
+export vblank_mode=0
+export __GL_SYNC_TO_VBLANK=0
 
 cd "$userdir/drive_c/users/$USER/AppData/Local/osu!"
 wine osu!.exe "$@"" | sudo tee /bin/osus

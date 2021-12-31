@@ -18,6 +18,7 @@ osu-install-arch.sh	> the main script which installs needed packages, creates WI
 ## table of contents
  - [introduction](#introduction)
  - [how do I execute this script?](#how-do-i-execute-this-script)
+ - [experimental branch (should not be used)](https://github.com/yurisuki/osu-install/tree/experimental)
  - [distributions](#distributions)
  - [todo/wish](#todowish)
  - [contact](#contacting-me)

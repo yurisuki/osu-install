@@ -18,18 +18,14 @@ osu-install-arch.sh	> the main script which installs needed packages, creates WI
 ## table of contents
  - [introduction](#introduction)
  - [how do I execute this script?](#how-do-i-execute-this-script)
- - [todo/wish](#todo/wish)
+ - [distributions](#distributions)
+ - [todo/wish](#todowish)
  - [contact](#contacting-me)
 
 # introduction
 Install osu! on Linux by executing one script and pressing ENTER! It just takes shy of ~8 minutes on my machine (Could take less on yours) to have fully functioning osu!.
 
 Yes, exactly, that's what this script does do! No more need to hassle with the difficult and time-consuming installation.
-
-# todo/wish
-- Make a script, which will install `pipewire`, and make latency smallest as possible (if user will have any problems, he can revert back easily.)
-- Determine, which distribution is used the most and based on that, recreate script to work on that distribution.
-
 
 # how do I execute this script?
 It's really easy!
@@ -42,6 +38,15 @@ curl https://raw.githubusercontent.com/yurisuki/osu-install/main/osu-install-arc
 # Uncomment line under, if you don't have curl installed.
 #wget -qO- https://raw.githubusercontent.com/yurisuki/osu-install/main/osu-install-arch.sh | sh
 ```
+
+# distributions
+I know, it's just for Arch Linux based distributions, but I plan making this for other distributions.
+Please, write your distribution [here](https://github.com/yurisuki/osu-install/issues/2), it will help me decide, on which distribution I should focus next. Thank you.
+
+# todo/wish
+- Make a script, which will install `pipewire`, and make latency smallest as possible (if user will have any problems, he can revert back easily.)
+- Determine, which distribution is used the most and based on that, recreate script to work on that distribution.
+- Make script for other distributions.
 
 # contacting me
 You can contact me here on GitHub, but also on my e-mail: adam@adamnvrtil.fun

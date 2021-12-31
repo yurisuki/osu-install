@@ -18,13 +18,18 @@ osu-install-arch.sh	> the main script which installs needed packages, creates WI
 ## table of contents
  - [introduction](#introduction)
  - [how do I execute this script?](#how-do-i-execute-this-script)
- - [faq](https://yurisuki.github.io/osu-install/#faq)
+ - [todo/wish](#todo/wish)
  - [contact](#contacting-me)
 
 # introduction
 Install osu! on Linux by executing one script and pressing ENTER! It just takes shy of ~8 minutes on my machine (Could take less on yours) to have fully functioning osu!.
 
 Yes, exactly, that's what this script does do! No more need to hassle with the difficult and time-consuming installation.
+
+# todo/wish
+- Make a script, which will install `pipewire`, and make latency smallest as possible (if user will have any problems, he can revert back easily.)
+- Determine, which distribution is used the most and based on that, recreate script to work on that distribution.
+
 
 # how do I execute this script?
 It's really easy!

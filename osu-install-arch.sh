@@ -138,7 +138,7 @@ export WINEPREFIX="$userdir"
 export WINEARCH=win32
 
 # Tell user that we're installing .NET Framework
-zenitynotif "I have everything ready, now we will install .NET Framework\nThis might take 5-10 minutes, because .NET Frameworks' installer sucks."
+zenitynotif "I have everything ready, now we will install .NET Framework and asian fonts.\nThis might take up to 10 minutes."
 
 # Let's start the installation.
 winetricks dotnet40 cjkfonts >/dev/null 2>&1 || botherrors "winetricks messed up something, don't blame me."
@@ -204,4 +204,4 @@ StartupWMClass=osu!.exe
 Categories=Game;
 MimeType=x-scheme-handler/discord-367827983903490050;x-scheme-handler/osu;" | sudo tee ~/.local/share/applications/osu!.desktop
 
-zenitynotif "We have done the installation! If you want better sound latency, then you have to run my script \"blabla\". Thank you for your corporation, without you we wouldn't be able to install osu!.\nYou can start osu!, by typing \`osu\` in terminal, or find it in your applications (if your DE supports that.)\nIf osu! ever freezes, and you can't turn it off, then I prepared handy command for you. It's \`osukill\`, it will kill osu!, and wine.\n\nHave a nice day!"
+zenitynotif "We have done the installation! Thank you for your corporation, without you we wouldn't be able to install osu!.\nYou can start osu!, by typing \`osu\` in terminal, or find it in your applications (if your DE supports that.)\nIf osu! ever freezes, and you can't turn it off, then I prepared handy command for you. It's \`osukill\`, it will kill osu!, and wine.\n\nHave a nice day!"

@@ -190,7 +190,7 @@ export WINEPREFIX="$userdir"
 wineserver -k" | sudo tee /bin/osukill
 
 # Make it executable.
-sudo chmod +x /bin/osus /bin/osukill || botherrors "i couldn't chmod one of the files."
+sudo chmod +x /bin/osu /bin/osukill || botherrors "i couldn't chmod one of the files."
 
 # Let's add entry to applications
 # Make a directory, where application will be placed.

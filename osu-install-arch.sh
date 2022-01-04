@@ -180,17 +180,17 @@ export vblank_mode=0
 export __GL_SYNC_TO_VBLANK=0
 
 cd "$userdir/drive_c/users/$USER/AppData/Local/osu!"
-wine osu!.exe "$@"" | sudo tee /bin/osus
+wine osu!.exe "$@"" | sudo tee /bin/osu
 
 # This one generates kill script. You can kill game using osukill.
 # You should only use this when the game freezes.
 echo "#!/bin/sh
 export WINEPREFIX="$userdir"
 
-wineserver -k" | sudo tee /bin/osuskill
+wineserver -k" | sudo tee /bin/osukill
 
 # Make it executable.
-sudo chmod +x /bin/osus /bin/osuskill || botherrors "i couldn't chmod one of the files."
+sudo chmod +x /bin/osus /bin/osukill || botherrors "i couldn't chmod one of the files."
 
 # Let's add entry to applications
 # Make a directory, where application will be placed.
@@ -201,7 +201,7 @@ Type=Application
 Name=osu!
 Exec=osu %u
 StartupWMClass=osu!.exe
-Categories=Game;
+Categories=Game
 MimeType=x-scheme-handler/discord-367827983903490050;x-scheme-handler/osu;" | sudo tee ~/.local/share/applications/osu!.desktop
 
 zenitynotif "We have done the installation! Thank you for your corporation, without you we wouldn't be able to install osu!.\nYou can start osu!, by typing \`osu\` in terminal, or find it in your applications (if your DE supports that.)\nIf osu! ever freezes, and you can't turn it off, then I prepared handy command for you. It's \`osukill\`, it will kill osu!, and wine.\n\nHave a nice day!"
